@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', san-serif;
+  background-color: #eee;
+}
+
+.search {
+  background-color: white;
+  box-shadow: 0 7px 30px -10px rgba(86, 110, 122, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+}
+
+.memories-c {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.signinlogo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.form-contro h2 {
+  padding: 10px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.login-container {
+  background: white;
+  box-shadow: 0 7px 30px -10px rgba(86, 110, 122, 0.5);
+  /* box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: auto;
+}
+
+.form-contro {
+  margin-top: 10px;
+  width: 300px;
+  position: relative;
+}
+
+.form-contro input {
+  width: 100%;
+  display: block;
+  padding: 12px 0;
+  font-size: 18px;
+  transition: 0.1s ease-in;
+  border: 2px solid rgb(170, 169, 169);
+  border-radius: 5px;
+}
+
+.form-contro label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 15px;
+  transition: 0.3s ease-in;
+  color: rgb(170, 169, 169);
+}
+
+.form-contro input:focus,
+.form-contro input:valid {
+  border: 2px solid purple;
+  outline: none;
+}
+
+.form-contro input:hover {
+  border: 2px solid purple;
+}
+
+.form-contro input:focus + label,
+.form-contro input:valid + label {
+  font-size: 14px;
+  transform: translateY(-20px);
+  color: darksalmon;
+  background: white;
+  padding: 0 5px;
+}
+
+/* button */
+
+.button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: blue;
+  color: #eee;
+  border-radius: 3px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+
+span {
+  position: absolute;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+.dont {
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.errormsg {
+  text-align: center;
+  background-color: rgb(194, 46, 46);
+  width: 400px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 7px 30px -10px rgba(86, 110, 122, 0.5);
+}

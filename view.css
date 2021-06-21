@@ -1,0 +1,99 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+.containerr {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.containerr .view-img {
+  min-width: 600px;
+  height: 300px;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 7px 30px -10px rgba(86, 110, 122, 0.5);
+}
+
+.title {
+  font-size: 40px;
+  margin: 0 0 5px 0;
+}
+
+.messa {
+  color: #aaa;
+  max-width: 500px;
+  padding: 10px 0 0 0;
+}
+
+.created {
+  padding: 10px 0;
+}
+
+.con {
+  max-width: 1300px;
+  margin: 0 auto 20px auto;
+  background-color: #eee;
+  padding: 20px;
+}
+
+.places {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.place {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  border-right: 2px solid #fff;
+  margin-bottom: 30px;
+}
+
+.like-img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.messag {
+  width: 300px;
+  color: #aaa;
+  padding: 10px 0;
+}
+
+.created {
+  opacity: 0.7;
+}
+
+.tags-card {
+  opacity: 0.8;
+}
+
+.youmay-view {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(159, 93, 224);
+  color: #eee;
+  width: 60px;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .containerr .view-img {
+    min-width: 400px;
+    height: 200px;
+  }
+}
