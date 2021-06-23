@@ -22,8 +22,8 @@ User can only edit or delete a post if that specific post is created by him/her.
 
 # Technologies Used:
 
-1.HTML
-2.CSS
-3.JAVASCRIPT
-4.PHP
-5.MYSQL
+1. HTML
+2. CSS
+3. JAVASCRIPT
+4. PHP
+5. MYSQL
