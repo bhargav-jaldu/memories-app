@@ -19,6 +19,13 @@ User can only edit or delete a post if that specific post is created by him/her.
 # Memories
 ![image](https://user-images.githubusercontent.com/78521151/122956951-175a8080-d39f-11eb-8c24-162b28a91bcb.png)
 
+# search for a post with title
+![image](https://user-images.githubusercontent.com/78521151/123069679-a2d02200-d430-11eb-976e-0bb54280ec8e.png)
+
+# View a post and Recommened posts feature
+![image](https://user-images.githubusercontent.com/78521151/123069609-8e8c2500-d430-11eb-8eb0-63ab9dd2c559.png)
+
+
 # Technologies Used:
 
 1. HTML
