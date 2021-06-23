@@ -20,3 +20,10 @@ User can only edit or delete a post if that specific post is created by him/her.
 # Memories
 ![image](https://user-images.githubusercontent.com/78521151/122956951-175a8080-d39f-11eb-8c24-162b28a91bcb.png)
 
+# Technologies Used:
+
+1.HTML
+2.CSS
+3.JAVASCRIPT
+4.PHP
+5.MYSQL
