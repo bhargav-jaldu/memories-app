@@ -17,7 +17,7 @@ User can only edit or delete a post if that specific post is created by him/her.
 ![image](https://user-images.githubusercontent.com/78521151/122956659-d2cee500-d39e-11eb-8bcf-1474e5d5b384.png)
 
 # Memories
-![image](https://user-images.githubusercontent.com/78521151/122956951-175a8080-d39f-11eb-8c24-162b28a91bcb.png)
+![image](https://user-images.githubusercontent.com/78521151/123535100-73c2f480-d73f-11eb-88d5-c2743ab503ff.png)
 
 # search for a post with title
 ![image](https://user-images.githubusercontent.com/78521151/123069679-a2d02200-d430-11eb-976e-0bb54280ec8e.png)
