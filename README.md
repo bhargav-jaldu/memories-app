@@ -1,4 +1,4 @@
-# memories-app
+# MEMORIES_APP
 https://theocratic-modifica.000webhostapp.com/
 
 # PHP PROJECT
