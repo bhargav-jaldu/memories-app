@@ -8,7 +8,7 @@ https://theocratic-modifica.000webhostapp.com/
 The App is called Memories and it is a simple social media app that allows users to post, like intersting events that are happend in their lives
  
 User can only edit or delete a post if that specific post is created by him/her.
-![image](https://user-images.githubusercontent.com/78521151/123032456-9aadbd80-d403-11eb-920b-e3aeffba6bee.png)
+![image](https://user-images.githubusercontent.com/78521151/123535178-e7650180-d73f-11eb-8a0d-12cda2cb57cd.png)
 
 # Login page
 ![image](https://user-images.githubusercontent.com/78521151/122956564-be8ae800-d39e-11eb-859c-4411a64d7522.png)
@@ -20,7 +20,7 @@ User can only edit or delete a post if that specific post is created by him/her.
 ![image](https://user-images.githubusercontent.com/78521151/123535100-73c2f480-d73f-11eb-88d5-c2743ab503ff.png)
 
 # search for a post with title
-![image](https://user-images.githubusercontent.com/78521151/123069679-a2d02200-d430-11eb-976e-0bb54280ec8e.png)
+![image](https://user-images.githubusercontent.com/78521151/123535154-c69cac00-d73f-11eb-8822-6934f9651cb1.png)
 
 # View a post, comment to that post and Recommened posts feature
 ![image](https://user-images.githubusercontent.com/78521151/123535063-45451980-d73f-11eb-8ef6-179fd375f506.png)
