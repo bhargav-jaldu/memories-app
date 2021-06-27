@@ -61,28 +61,108 @@ if(isset($_GET['view'])) {
     <div>
         <img src="uploads/<?php echo "$row[imageUrl]" ?>" alt="" class="view-img">
     </div>
+    <div class="comments-container">
+<div class="comments">
+<button class="bottom"><i class="fas fa-chevron-down"></i></button>
+
+<script>
+
+const commentsContainer = document.querySelector('.comments')
+const downBtn = document.querySelector('.bottom')
+
+$(document).ready(function() {
+
+    $(".comments-form").on('submit', function(e) {
+        e.preventDefault();
+    });
+
+    <?php  include "fetchComments.php"; ?>
+
+    $("#commentSubmit").on('click', function() {
+        const comment = $("#comment").val();
+        console.log(comment)
+            $.ajax({
+            type:"POST",
+            url: 'comments.php',
+            data: {
+                postId: <?php echo $_GET['view']; ?>,
+                uComment: comment
+            },
+            success: function(data) {
+                // convert to js object
+                const results = JSON.parse(data);
+                var vs = commentsContainer.scrollHeight > commentsContainer.clientHeight;
+                    if(vs) {
+                        commentsContainer.scrollBy(0,1000);
+                    }
+                    commentsContainer.innerHTML += `
+                        <h3>${results.sessionName}</h3>
+                        <p>${results.comment}</p>
+                    `;
+            }
+        })
+    })
+})
+
+</script>
+
+<?php
+$idd = $_GET['view'];
+$fetcing = "SELECT * FROM comments WHERE post_id='$idd'";
+$fetchingResults = mysqli_query($conn, $fetcing);
+
+    if(mysqli_num_rows($fetchingResults) > 0) {
+        while($rows = mysqli_fetch_assoc($fetchingResults)) {
+            ?>
+                <h3><?php echo $rows['sessionName'] ?></h3>
+                <p><?php echo $rows['comment'] ?></p>
+            <?php
+        }
+    }
+
+?>
 </div>
+        <form class="comments-form">
+            <label for="comment">Write your comment: </label>
+            <textarea name="text" id="comment" cols="40" rows="5" placeholder="Write Your comment...." required></textarea>
+            <button type="submit" id="commentSubmit" name="commentSubmit">Comment</button>
+        </form>
+    </div>
+</div>
+
 <?php
         }
     }
 }
-
 ?>
+
+<script>
+    downBtn.addEventListener('click', () => {
+        commentsContainer.scrollBy(0, 1000);
+    })
+</script>
 
 <div class="con">
     <h1 style="padding: 10px;">You might also like:</h1>
     <hr>
     <?php
 
+            $condition = "";
             $q = "SELECT tags from cards WHERE id='$id'";
             $exe = mysqli_query($conn, $q);
             $title = mysqli_fetch_assoc($exe);
 
             $searchq = $title['tags'];
-            // $searchq = preg_replace("#[^0-9a-z]#i", "", $searchq);
+            $str_arr = preg_split ("/\,/", $searchq);
+            for($i = 0;$i < count($str_arr);$i++) {
+                $condition .= " '%$str_arr[$i]%' OR";
+            }
+            $cond =  substr($condition, 0, -3);
+
+            $searchq = preg_replace("#[^0-9a-z]#i", "", $searchq);
 
         
-            $query = "SELECT * from cards WHERE tags LIKE '%$searchq%'";
+            $query = "SELECT * from cards WHERE tags LIKE $cond";
             $result = mysqli_query($conn, $query);
             // $resul = mysqli_fetch_all($result);
             // print_r($resul);
@@ -114,3 +194,4 @@ if(isset($_GET['view'])) {
     </div>
 
 </div>
+
