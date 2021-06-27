@@ -22,14 +22,15 @@ User can only edit or delete a post if that specific post is created by him/her.
 # search for a post with title
 ![image](https://user-images.githubusercontent.com/78521151/123069679-a2d02200-d430-11eb-976e-0bb54280ec8e.png)
 
-# View a post and Recommened posts feature
-![image](https://user-images.githubusercontent.com/78521151/123069609-8e8c2500-d430-11eb-8eb0-63ab9dd2c559.png)
+# View a post, comment to that post and Recommened posts feature
+![image](https://user-images.githubusercontent.com/78521151/123535063-45451980-d73f-11eb-8ef6-179fd375f506.png)
+
 
 
 # Technologies Used:
 
 1. HTML
 2. CSS
-3. JAVASCRIPT
+3. JAVASCRIPT AND JQUERY
 4. PHP
 5. MYSQL
