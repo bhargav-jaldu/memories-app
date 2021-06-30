@@ -25,6 +25,11 @@ User can only edit or delete a post if that specific post is created by him/her.
 # View a post, comment to that post and Recommened posts feature
 ![image](https://user-images.githubusercontent.com/78521151/123535063-45451980-d73f-11eb-8ef6-179fd375f506.png)
 
+# Chat Feature using Ajax
+![image](https://user-images.githubusercontent.com/78521151/123935862-3e720d00-d9b2-11eb-8feb-dc778d0c29aa.png)
+
+# Chat with a specific user
+![image](https://user-images.githubusercontent.com/78521151/123935961-58135480-d9b2-11eb-92ba-c2bfe5ec162b.png)
 
 
 # Technologies Used:
